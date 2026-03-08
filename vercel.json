@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "name": "cobalt-api",
+  "rewrites": [
+    {
+      "source": "/api/json",
+      "destination": "/api"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/api"
+    }
+  ]
+}
