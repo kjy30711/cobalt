@@ -1,14 +1,11 @@
 {
   "version": 2,
   "name": "cobalt-api",
+  "functions": {
+    "api/index.js": { "runtime": "nodejs20.x" }
+  },
   "rewrites": [
-    {
-      "source": "/api/json",
-      "destination": "/api"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/api"
-    }
+    { "source": "/api/json", "destination": "/api" },
+    { "source": "/(.*)", "destination": "/api" }
   ]
 }
